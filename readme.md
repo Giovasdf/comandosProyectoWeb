@@ -49,7 +49,12 @@ npm init -y
     ```bash
     npm run build-css
     ```
+## Alternativa de compilación de Sass
+1. **Recuerda que puedes usar el plug-in de Live Sass Compiler:**
+    [Link de MarketPlace Studio](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+   
 
+ 
 ## Estructura del Proyecto
 
 La estructura recomendada para tu proyecto es la siguiente:
