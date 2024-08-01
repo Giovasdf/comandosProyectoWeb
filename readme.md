@@ -114,4 +114,18 @@ La estructura recomendada para tu proyecto es la siguiente:
 
     *Recuerda que el script debe contener la propiedad `type="module"`
 
+## Habilitar un componente de Bootstrap que usa JavaScript
+1. **En el caso de usar Tooltip que es un elemento que requiere habilitarse:**
+
+    En tu archivo principal de js (por ejemplo, `./assets/js/script.js`), agrega:
+
+    ```js
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    ```
+    El código para habilitar el componente siempre lo encontraras en las sección ` Enable {Nombre del Componente}`
+
+    Te dejo el link de la documentación de Tooltips para que lo puedas comprobar [Tooltip-Boostrap](https://getbootstrap.com/docs/5.3/components/popovers/)
+ 
+
 ¡Listo! Ahora estás listo para desarrollar tu proyecto con Bootstrap y Sass.
